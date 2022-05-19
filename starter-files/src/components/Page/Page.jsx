@@ -11,11 +11,11 @@ import styles from './Page.module.css';
 
 
 const Page = () => {
-    const {isError, isLoading, forecast} = useForecast();
+    const {isError, isLoading, forecast, submitRequest} = useForecast();
 
 
-    const onSubmit = () =>{
-
+    const onSubmit = (value) =>{
+        submitRequest(value)
     }
 
 
