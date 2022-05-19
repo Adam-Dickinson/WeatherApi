@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import styles from './Form.module.css';
+import { useState } from 'react';
 
 const Form = () => {
+    
+    const onSubmit = e =>{
+        e.preventDefault();
+    }
     return (
-        <form>
+        <form onSubmit={onSubmit}>
             <input
                 aria-label="location"
                 type="text"
@@ -13,7 +18,7 @@ const Form = () => {
                 required
             />
 
-            <button type="submit" className={styles.button}>
+            <button type="submit" className={styles.button} onClick={onSubmit}>
                 SEARCH
             </button>
         </form>

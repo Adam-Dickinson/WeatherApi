@@ -16,11 +16,11 @@ const Page = () => {
                 {}
                 <Form/>
                 {}
-                <Error/>
+                {/*<Error/>*/}
                 {}
-                <Loader/>
+                {/*<Loader/>*/}
                 {}
-                <Forecast/>
+                {/*<Forecast/>*/}
             </div>
         </Fragment>
     );
