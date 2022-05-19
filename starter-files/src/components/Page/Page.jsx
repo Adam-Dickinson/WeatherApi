@@ -24,7 +24,7 @@ const Page = () => {
             <Header />
             <div className={styles.box}>
                 {}
-                {isLoading && <Form submitSearch={onSubmit}/>}
+                {!isLoading && <Form submitSearch={onSubmit}/>}
                 {}
                 {isError && <Error message={isError}/>}
                 {}
