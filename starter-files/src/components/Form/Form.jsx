@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 
 import styles from './Form.module.css';
-import { useState } from 'react';
 
 const Form = () => {
     const [location, setlocation] = useState('')
