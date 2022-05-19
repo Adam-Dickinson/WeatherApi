@@ -12,12 +12,19 @@ import styles from './Page.module.css';
 
 const Page = () => {
     const {isError, isLoading, forecast} = useForecast();
+
+
+    const onSubmit = () =>{
+
+    }
+
+
     return (
         <Fragment>
             <Header />
             <div className={styles.box}>
                 {}
-                {isLoading && <Form/>}
+                {isLoading && <Form submitSearch={onSubmit}/>}
                 {}
                 {isError && <Error message={isError}/>}
                 {}
