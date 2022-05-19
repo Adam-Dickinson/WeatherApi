@@ -29,7 +29,7 @@ const Form = ({submitSearch}) => {
 };
 
 Form.propTypes ={
-    submitSearch: PropTypes.func.required,
+    submitSearch: PropTypes.func.isRequired,
 }
 
 export default Form;
