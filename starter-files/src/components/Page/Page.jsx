@@ -17,14 +17,15 @@ const Page = () => {
             <Header />
             <div className={styles.box}>
                 {}
-                <Form/>
+                {isLoading && <Form/>}
                 {}
-                {/*<Error/>*/}
+                {isError && <Error/>}
                 {}
-                {/*<Loader/>*/}
-                {}
-                {/*<Forecast/>*/}
+                {isLoading && <Loader/>}
             </div>
+                {}
+                {forecast && <Forecast/>}
+            
         </Fragment>
     );
 };
