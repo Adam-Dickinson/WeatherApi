@@ -22,7 +22,7 @@ const Page = () => {
     return (
         <Fragment>
             <Header />
-            <div className={styles.box}>
+            <div className={`${styles.box} postition-relative`}>
                 {}
                 {!isLoading && <Form submitSearch={onSubmit}/>}
                 {}
