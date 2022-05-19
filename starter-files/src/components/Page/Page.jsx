@@ -11,6 +11,7 @@ import styles from './Page.module.css';
 
 
 const Page = () => {
+    useForecast();
     return (
         <Fragment>
             <Header />
