@@ -5,6 +5,8 @@ import Error from '../Error';
 import Loader from '../Loader';
 import Forecast from '../Forecast';
 
+import useForecast from '../../hooks/useForecast';
+
 import styles from './Page.module.css';
 
 
