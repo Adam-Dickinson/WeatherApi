@@ -12,7 +12,9 @@ const useForecast = () =>{
  
 
     const submitRequest = async location => {
-        await axios(`${REQUEST_URL}/serach`, {params: {query: location}});
+        const response = await axios(`${REQUEST_URL}/serach`, {params: {query: location}});
+
+        console.log({response});
     }
 
 
