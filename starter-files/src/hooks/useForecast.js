@@ -41,6 +41,7 @@ const useForecast = () =>{
         const response = await getWoeid(location);
         if(!response?.woeid) return;
         const data = await getForecastData(response.woeid)
+        if(!data) return;
     };
 
 
